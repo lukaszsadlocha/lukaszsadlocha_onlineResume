@@ -1,0 +1,57 @@
+﻿@using lukaszsadlocha_onlineresume.Services
+
+<div id="forRecruiters">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>For Recruiters</h5>
+            </div>
+            <div class="col-lg-6">
+                <p>
+                    Dear Recruiter,
+                    <br />
+                    Below I tried to sum up exactly what is crucial for me in terms of career opportunities:
+                    <ul>
+                        <li>I appreciate much more <strong>experienced team</strong> vs direct and indirect benefits (bonuses, WFH, picnics and Friday pizza)</li>
+                        <li>Training budget and participation in courses and trainings mentioned in the agreement would be a big plus</li>
+                        <li>Technologies: development tasks within Microsoft technologies: SharePoint, Azure, Sitecore, ASP.NET, MS SQL and as addition to "Full Stack" - JavaScript, jQuery etc.</li>
+                        <li>Favourite location would be my birth city - Krakow but I will consider  also other locations</li>
+                        <li>I prefer contract vs permanent job agreement</li>
+                    </ul>
+                </p>
+                <br />
+                <p>Please, leave your email address if you want me to contact you once I will be looking for a job offer</p>
+                <form asp-action="Index" method="post" id="contactForm">
+                    <div class="input-group col-xs-8">
+                        <input class="form-control" type="email" name="emailAddress" />
+                        <span class="input-group-btn"><input class="btn btn-primary" type="submit" value="Save" /></span>
+                    </div>
+                </form>
+                </br>
+
+                @if (ViewBag.MessageType == MessageType.Success)
+                {
+                    <div class="alert alert-success" id="successMessage">
+                        <span>@ViewBag.Message</span>
+                    </div>
+                }
+                @if (ViewBag.MessageType == MessageType.Error)
+                {
+                    <div class="alert alert-danger" id="errorMessage">
+                        <span>@ViewBag.Message</span>
+                    </div>
+                }
+
+                @*<script>
+                        $('successMessage').
+                    </script>*@
+
+                <script>
+
+                </script>
+
+            </div>
+        </div>
+    </div>
+</div>

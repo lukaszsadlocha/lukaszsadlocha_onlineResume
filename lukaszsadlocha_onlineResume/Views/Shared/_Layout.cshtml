@@ -1,0 +1,466 @@
+﻿@*End of head @Html.Raw(JavaScriptSnippet.FullScript)*@
+@*middle of body @RenderBody()*@
+@* last in body @RenderSection("Scripts", required: false)*@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Łukasz Sadłocha - online Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ico/favicon.png">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic'>
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway:400,300,700'>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/additional-methods.min.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+    <script src="~/js/Chart.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-offset="0" data-target="#nav">
+    <div id="section-topbar">
+        <div id="topbar-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="dropdown">
+                        <ul id="nav" class="nav">
+                            <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#work" title="Work"><i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#education" title="Education"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#certifiaction" title="Certifiaction"><i class="fa fa-certificate" aria-hidden="true"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#skills" title="Skills"><i class="fa fa-star" aria-hidden="true"></i></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#whatido" title="What I do"><i class="fa fa-windows" aria-hidden="true"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        </ul><!--/ uL#nav -->
+                    </div><!-- /.dropdown -->
+                    <div class="clear"></div>
+                </div><!--/.row -->
+            </div><!--/.container -->
+            <div class="clear"></div>
+        </div><!--/ #topbar-inner -->
+    </div><!--/ #section-topbar -->
+
+    <div id="headerwrap">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-12">
+                    <h1>Łukasz Sadłocha</h1>
+                    <h3>.NET Developer | lukaszsadlocha@gmail.com</h3>
+                </div><!--/.col-lg-12 -->
+            </div><!--/.row -->
+        </div><!--/.container -->
+    </div><!--/.#headerwrap -->
+
+
+
+    <section id="about" name="about"></section>
+    <div id="intro">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>ABOUT</h5>
+                </div>
+                <div class="col-lg-6">
+                    <p>
+                        I am a developer working with .NET framework and technologies around Microsoft. I gained 7 years of professional experience in various work environments. My career path has crossed already with 2 big 'business-commercial' platforms: SharePoint and Sitecore. I am a big fan of latest trends of moving services to Cloud, Continous integration/deployment and open source projects. I was always a little bit more interested in backend development but during my career, I also gained knowledge of front-end technologies and I always treat it as the complement of my work. Privately I am a big fan of sport (Wind&Kite surfing, cycling, squash, skiing, and football)
+                        <br />
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="~/files/Lukasz Sadlocha_CV_2017.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><sm>DOWNLOAD MY RESUME IN PDF</sm></a></p>
+                </div>
+
+            </div><!--/.row -->
+        </div><!--/.container -->
+    </div><!--/ #intro -->
+    <!--WORK DESCRIPTION -->
+    <section id="work" name="work"></section><br />
+    <div class="container desc">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>WORK</h5>
+            </div>
+            <div class="col-lg-6">
+                <p>
+                    <t>NET/Sitecore developer</t><br />
+                    HSBC<br />
+                </p>
+                <p><more>Responsible for new features and bug fixing on bank’s official page hsbc.com and 40+ regional pages using Sitecore CMS in versions 7.2 and 8.1 (including upgrade process and Azure migration). Developing solutions using both WebForms and MVC approach, improving knowledge of Sitecore tech stacks like Apache Lucene indexes and third-party API providers</more></p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>NOVEMEBER 2016 - CURRENT</sm></p>
+            </div>
+
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                    <t>Information Technology Leadership Program</t><br />
+                    GE Healthcare<br />
+                </p>
+                <p><more>Program consists of 4 rotations mainly focused on developing project management skills. I was leading (in a PM role) global projects across different departments of GE Healthcare with a team of 30+ folks. I gathered requirements from customers, managed business relationships, delivered MVPs. In meantime, I was working also as developer using "Not” .NET technologies like Node.js, Predix and Spring Framework</more></p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>JULY 2015 - NOVEMBER 2016</sm></p>
+            </div>
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                    <t>SharePoint/.NET Developer</t><br />
+                    Arc-consulting<br />
+                </p>
+                <p><more>Creating dedicated solutions for business in various Microsoft technologies like SharePoint, ASP.NET MVC/WebForms Azure, Office365, VBA</more></p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>JANUARY 2014 - JULY 2015</sm></p>
+            </div>
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                    <t>Consultant</t><br />
+                    WebCon<br />
+                </p>
+                <p><more>Responsible for implementing business workflow platforms in various companies and preparing custom SSRS reports</more></p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>JANUARY 2013 - SEPTEMBER 2013</sm></p>
+            </div>
+
+
+
+        </div><!--/.row -->
+        <br>
+        <hr>
+    </div><!--/.container -->
+    <!--EDUCATION DESCRIPTION -->
+    <section id="education" name="education"></section><br />
+    <div class="container desc">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>EDUCATION</h5>
+            </div>
+            <div class="col-lg-6">
+                <p>
+                    <t>Postgraduate study in IT Management and Business </t><br />
+                    Indiana University  <br />
+                    <i>2 Years Course</i>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p>
+                    <sm>2015 - 2017</sm><br />
+                </p>
+            </div>
+
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                    <t>Master of Automatic Control [IT in Control and Management]</t><br />
+                    University of Science and Technology  <br />
+                    <i>7 + 3 Semesters Course</i>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>2010 - 2015</sm></p>
+            </div>
+
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                    <t>Information Technology [Not finished]</t><br />
+                    University of Science and Technology  <br />
+                    <i>2 Semesters Course</i>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>2012 - 2013</sm></p>
+            </div>
+
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                    <t>Physics [Individual Cross-Sciences Studies]</t><br />
+                    Jagiellonian University <br />
+                    <i>3 Years Course</i>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>2010 - 2013</sm></p>
+            </div>
+
+        </div><!--/.row -->
+        <br>
+        <hr>
+    </div><!--/.container -->
+    <!--AWARDS DESCRIPTION -->
+    <section id="certifiaction" name="certifiaction"></section><br />
+    <div class="container desc">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>CENTIFICATIONS AND AWARDS</h5>
+            </div>
+            <div class="col-lg-6">
+                <p>
+                    <t>Certificate for Azure Fundamentals</t><br />
+                    Microsoft Learning Honor Code  <br />
+                </p>
+            </div>
+            <div class="col-lg-3">
+            </div>
+
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                    <t>Developing Microsoft SharePoint Server 2013 Core Solutions</t><br />
+                    Exam 70-488
+                </p>
+            </div>
+            <div class="col-lg-3">
+            </div>
+
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                    <t>Querying Microsoft SQL Server 2012</t><br />
+                    Exam 70-461
+                </p>
+            </div>
+            <div class="col-lg-3">
+            </div>
+
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                    <t>Certified LabVIEW Associate Developer</t><br />
+                </p>
+            </div>
+            <div class="col-lg-3">
+            </div>
+
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                    <t>National Physics and Math Competitions Finalist</t><br />
+                </p>
+            </div>
+            <div class="col-lg-3">
+            </div>
+
+        </div><!--/.row -->
+        <br>
+    </div><!--/.container -->
+    <!--SKILLS DESCRIPTION -->
+    <section id="skills" name="skills"></section><br />
+    <div id="skillswrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>SKILLS</h5>
+                </div>
+                @*.NET skill*@
+                <div class="col-lg-3 centered">
+                    <canvas id="dotnet" height="130" width="130"></canvas>
+                    <p>.NET</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                            {
+                                value: 80,
+                                color: "#1abc9c"
+                            },
+                            {
+                                value: 20,
+                                color: "#ecf0f1"
+                            }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("dotnet").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                @*sharepoint skill*@
+                <div class="col-lg-3 centered">
+                    <canvas id="sharePoint" height="130" width="130"></canvas>
+                    <p>SharePoint</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                            {
+                                value: 80,
+                                color: "#1abc9c"
+                            },
+                            {
+                                value: 20,
+                                color: "#ecf0f1"
+                            }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("sharePoint").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                @*SQL skill*@
+                <div class="col-lg-3 centered">
+                    <canvas id="sql" height="130" width="130"></canvas>
+                    <p>SQL</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                            {
+                                value: 70,
+                                color: "#1abc9c"
+                            },
+                            {
+                                value: 30,
+                                color: "#ecf0f1"
+                            }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("sql").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                @*sitecore skill*@
+                <div class="col-lg-3 col-lg-offset-3 centered">
+                    <canvas id="sitecore" height="130" width="130"></canvas>
+                    <p>Sitecore</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                            {
+                                value: 70,
+                                color: "#1abc9c"
+                            },
+                            {
+                                value: 30,
+                                color: "#ecf0f1"
+                            }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("sitecore").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                @*web skill*@
+                <div class="col-lg-3  centered">
+                    <canvas id="htmlcssjs" height="130" width="130"></canvas>
+                    <p>HTML/CSS/JavaScript</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                            {
+                                value: 65,
+                                color: "#1abc9c"
+                            },
+                            {
+                                value: 35,
+                                color: "#ecf0f1"
+                            }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("htmlcssjs").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                @*azure skill*@
+                <div class="col-lg-3 centered">
+                    <canvas id="azure" height="130" width="130"></canvas>
+                    <p>Azure</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                            {
+                                value: 60,
+                                color: "#1abc9c"
+                            },
+                            {
+                                value: 40,
+                                color: "#ecf0f1"
+                            }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("azure").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+            </div><!--/.row -->
+            <br>
+        </div><!--/.container -->
+    </div><!--/ #skillswrap -->
+
+    <section id="whatido" name="whatido"></section><br />
+    <!--TECHNOLOGIES DESCRIPTION -->
+    <div class="container desc">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>TECHNOLOGIES</h5>
+            </div>
+            <div class="col-lg-5">
+                <p><img class="img-responsive" src="~/images/sharePoint.jpg" alt=""></p>
+            </div>
+            <div class="col-lg-4">
+                <p>
+                    SHAREPOINT
+                    <br />
+                    I worked with SharePoint 2007, 2010, 2013 and Online fulfilling various business requirements; starting from OOTB SharePoint configuration to deliver simple intranet systems, going through big Farm solutions placed directly on the server, many small workflow instances that were achieved by extending SharePoint forms and adding many JS code, ending on modern apps in provided-hosted model deployed in Microsoft Azure.
+                    I found the last model as my favorite way of developing systems on SharePoint. Testing/CI/CD/Scalability is simply achievable and there is a plenty of ASP.NET features that can be used.
+                    <br />
+                </p>
+            </div>
+
+            <div class="col-lg-5 col-lg-offset-3">
+                <p><img class="img-responsive" src="~/images/sitecore_big.png" alt=""></p>
+            </div>
+            <div class="col-lg-4">
+                <p>
+                    SITECORE
+                    <br />
+                    Sitecore.
+                    I've been connected with Sitecore platform since November 2016 and I really enjoy how the system is built and that there are plenty ways of extending it. I was responsible for developing new features in two Sitecore projects that hosted customer faced web pages with a load of 1000 per second requests in peak periods. I lead upgrade from Sitecore 7.2 to Sitecore 8.1 for multipage instance, I have a role of technical expert and advisor for moving Sitecore instances to Microsoft Azure (IaaS model), Configure advanced CI/CD pipeline using VSTS and introduced Apache Lucene index into reporting pages<br />
+                </p>
+            </div>
+
+            <div class="col-lg-5 col-lg-offset-3">
+                <p><img class="img-responsive" src="~/images/other.png" alt=""></p>
+            </div>
+            <div class="col-lg-4">
+                <p>
+                    Private projects<br />
+                    As a big enthusiast of new technologies, I appreciate that many services are provided by Microsoft for learning or small projects. Recently I am focused on process automation. I remember that couple years ago I was struggling with searching for Windows hosting, generating packages for deployment with compiled code, styles, Typescript files and so on. Then I found gulp which helped me a lot. Currently, I use VSTS and keep my projects on Azure still looking at courses on Pluralsight/MVA to find more effective ways of my work.
+                </p>
+            </div>
+
+        </div><!--/.row -->
+        <br>
+        <br>
+    </div><!--/.container -->
+    @*Recruters section will be in Index (render body) to handle POST method*@
+    @*<section id="forRecruiters" name="forRecruiters"></section>*@
+    <section id="contact" name="contact"></section>
+    @RenderBody()
+    <!--FOOTER DESCRIPTION -->
+    <div id="footwrap">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>CONTACT</h5>
+                </div>
+                <div class="col-lg-5">
+                    <p>
+                        <i class="fa fa-envelope" aria-hidden="true"></i><t>Email</t><br />
+                        <a href="mailto:lukaszsadlocha@gmail.com"> lukaszsadlocha@gmail.com</a><br />
+                    </p>
+                    <p>
+                        <i class="fa fa-link" aria-hidden="true"></i><t>Webpage</t><br />
+                        <a href="http://lukaszsadlocha.pl/">lukaszsadlocha.pl</a> <br />
+                    </p>
+                    <p>
+                        <i class="fa fa-phone" aria-hidden="true"></i><t>Phone</t><br />
+                        +48 509 509 917 <br />
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <p><sm>SOCIAL LINKS</sm></p>
+                    <ul>
+                        <li><a href="https://github.com/lukaszsadlocha/"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100001637353241"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+                        <li><a href="https://www.linkedin.com/in/%C5%82ukasz-sadlocha-33b63495/"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkendIn</a></li>
+                    </ul>
+                </div>
+            </div><!--/.row -->
+        </div><!--/.container -->
+    </div><!--/ #footer -->
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
